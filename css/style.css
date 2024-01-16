@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: sandybrown;
+}
+
+.container{
+  width: 400px;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background-color: #fff;
+  color: sandybrown;
+  border-radius: 10px;
+  gap: 30px;
+  padding: 10px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#urlInput{
+  margin-top: -10px;
+  height: 35px;
+  outline: none;
+  border: 2px solid sandybrown;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+
+#urlInput::placeholder{
+  color: gray;
+  opacity: 0.8;
+}
+
+#urlInput:focus{
+  box-shadow: 4px 4px 6px rgba (0, 0, 0, 0.2);
+}
+
+#qrcodeBtn{
+  width: 150px;
+  height: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: sandybrown;
+  border: none;
+  color: #fff;
+  border-radius: 18px;
+  
+}
+
+#qrcodeBtn:hover{
+filter: brightness(1.2);
+}
+
+#qrcode{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
